@@ -1,0 +1,25 @@
+{
+  "name": "excel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maksimssw/excel.git"
+  },
+  "author": "Maxim Gursky <kiva_hill@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maksimssw/excel/issues"
+  },
+  "homepage": "https://github.com/Maksimssw/excel#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
