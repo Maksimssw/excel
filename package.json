@@ -18,10 +18,16 @@
     "url": "https://github.com/Maksimssw/excel/issues"
   },
   "homepage": "https://github.com/Maksimssw/excel#readme",
+  "browserslist": "> 0.25%, not dead",
   "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
+    "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
   },

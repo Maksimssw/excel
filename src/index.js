@@ -1,3 +1,8 @@
 import  './webpack'
+import './styles/global.css'
 
-console.log('Index Start');
+async function start() {
+  await Promise.resolve();
+}
+
+start();
