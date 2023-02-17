@@ -2,7 +2,9 @@ import  './webpack'
 import './styles/global.css'
 
 async function start() {
-  await Promise.resolve();
+  return  Promise.resolve('Start');
 }
 
-start();
+console.log('start');
+
+start().then(console.log);
