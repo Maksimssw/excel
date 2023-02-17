@@ -9,6 +9,20 @@ const isDev = !isProd
 
 const filename = exp => isDev ? `bundle.${exp}` : `bundle.[hash].${exp}`
 
+const jsLoader = () => {
+  const loaders = [
+    {
+      loader: 'babel-loader'
+    }
+  ]
+
+  if (isDev) {
+    loaders.push('eslint-loader')
+  }
+
+  return loaders
+}
+
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: "development",
@@ -62,7 +76,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        use: jsLoader()
       }
     ]
   }
