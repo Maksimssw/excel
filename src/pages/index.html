@@ -6,16 +6,76 @@
 				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="icon" href="../static/icons/favicon.ico">
+	<link rel="stylesheet" href="../static/styles/global.css">
+	<link rel="stylesheet" href="../static/styles/styles.css">
 	<title>Excel</title>
 </head>
 <body>
 
 	<div id="app" class="container">
 
-		<div class="exel">
+		<div class="excel">
 
 			<header class="header">
+				<a href="#">
+					<img
+						class="header__logo"
+						src="../static/images/excel-logo.webp"
+						alt=""
+					>
+				</a>
 
+				<div class="header__wrapper">
+					<div class="header__info">
+						<input
+							type="text"
+							value="Новая таблица"
+							class="header__input"
+						>
+
+						<svg class="header__favourites icon-18">
+							<use xlink:href="../static/icons/sprite.svg#star"></use>
+						</svg>
+					</div>
+
+					<div class="header__action">
+						<button class="header__delete">
+							<svg class="header__trash icon-18">
+								<use xlink:href="../static/icons/sprite.svg#trash"></use>
+							</svg>
+						</button>
+						<a href="#" class="header__link">
+							<svg class="header__trash icon-18">
+								<use xlink:href="../static/icons/sprite.svg#arrow-circle"></use>
+							</svg>
+						</a>
+					</div>
+
+					<div class="header__set">
+						<nav>
+							<ul class="header__list">
+								<li class="header__item">
+		 							Файл
+								</li>
+								<li class="header__item">
+									Правка
+								</li>
+								<li class="header__item">
+									Вид
+								</li>
+								<li class="header__item">
+									Формат
+								</li>
+								<li class="header__item">
+									Данные
+								</li>
+								<li class="header__item">
+									Инструменты
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</header>
 
 			<div class="toolbar">
