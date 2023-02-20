@@ -1,5 +1,4 @@
-import './webpack'
-import './styles/global.css'
+import '../styles/global.css'
 
 async function start() {
   return Promise.resolve('Start');

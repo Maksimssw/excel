@@ -26,7 +26,7 @@ const jsLoader = () => {
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: "development",
-  entry: ['@babel/polyfill', './index.js'],
+  entry: ['@babel/polyfill', '/static/scripts/index.js'],
   output: {
     filename: filename('js'),
     path: path.resolve(__dirname, 'build')
@@ -46,7 +46,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      template: 'pages/index.html',
       minify: {
         removeComments: isProd,
         collapseWhitespace: isProd
@@ -55,8 +55,8 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, 'src/favicon.ico'),
-          to: path.resolve(__dirname, 'build')
+          from: path.resolve(__dirname, 'src/static/icons/favicon.ico'),
+          to: path.resolve(__dirname, 'build/static/icons/')
         },
       ]
     }),
