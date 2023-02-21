@@ -7,6 +7,7 @@
     --color-gray200:   #dadbdc;
     --color-gray250:   #e6e6e6;
     --color-gray300:   #f1f3f4;
+    --color-gray350:   #dadce0;
     --color-gray400:   #777777;
     --color-gray500:   #5f6368;
     --color-gray900:   #202124;
@@ -17,13 +18,18 @@
     --color-blue400:   #1a73e8;
 
     --border-sm:       4px;
+
+    --height-header:   56px;
+    --height-toolbar:  60px;
 }
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 400;
     box-sizing: border-box;
 }
 
@@ -70,6 +76,14 @@ button {
     justify-content: space-between;
 }
 
+.rotate-90 {
+    transform: rotate(-90deg);
+}
+
+.rotate-180 {
+    transform: rotate(-180deg);
+}
+
 .icon-16 {
     width: 16px;
     height: 16px;
@@ -80,9 +94,20 @@ button {
     height: 18px;
 }
 
+.icon-24 {
+    width: 24px;
+    height: 24px;
+}
+
 .gray-hover {
     border-radius: var(--border-sm);
     transition: background 0.2s;
+    cursor: pointer;
+}
+
+.gray-border {
+    padding: 0 4px;
+    border-right: 1px solid var(--color-gray350);
 }
 
 .gray-hover:hover {
