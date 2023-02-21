@@ -1,11 +1,22 @@
 @import "../fonts/styles.css";
 
 :root {
-    --color-white:    #FFF;
+    --color-white:     #ffffff;
 
-    --color-gray100:  #EEE;
-    --color-gray400:  #5f6368;
-    --color-gray1000: #000;
+    --color-gray100:   #eeeeee;
+    --color-gray200:   #dadbdc;
+    --color-gray250:   #e6e6e6;
+    --color-gray300:   #f1f3f4;
+    --color-gray400:   #777777;
+    --color-gray500:   #5f6368;
+    --color-gray900:   #202124;
+    --color-gray1000:  #000000;
+
+    --color-yellow400: #fcc934;
+
+    --color-blue400:   #1a73e8;
+
+    --border-sm:       4px;
 }
 
 * {
@@ -30,8 +41,18 @@ img {
     height: auto;
 }
 
+ul li {
+    list-style-type: none;
+}
+
 input {
     border: none;
+    outline: none;
+}
+
+button {
+    border: none;
+    background: none;
     outline: none;
 }
 
@@ -39,6 +60,14 @@ input {
     display: grid;
     grid-auto-flow: column;
     align-items: center;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+
+.justify-content-between {
+    justify-content: space-between;
 }
 
 .icon-16 {
@@ -51,4 +80,12 @@ input {
     height: 18px;
 }
 
+.gray-hover {
+    border-radius: var(--border-sm);
+    transition: background 0.2s;
+}
+
+.gray-hover:hover {
+    background: var(--color-gray300);
+}
 
