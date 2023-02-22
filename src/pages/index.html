@@ -12,253 +12,301 @@
 </head>
 <body>
 
-	<div id="app" class="container">
+<div id="app" class="container">
 
-		<div class="excel">
+	<div class="excel">
 
-			<header class="header">
-				<a href="#" class="header__logo">
-					<img
-						src="../static/images/excel-logo.webp"
-						alt=""
+		<header class="header">
+			<a href="#" class="header__logo">
+				<img
+					src="../static/images/excel-logo.webp"
+					alt=""
+				>
+			</a>
+
+			<div class="header__wrapper">
+				<div class="header__info grid-row justify-content-start">
+					<input
+						type="text"
+						value="Новая таблица"
+						class="header__name"
 					>
-				</a>
 
-				<div class="header__wrapper">
-					<div class="header__info grid-row justify-content-start">
-						<input
-							type="text"
-							value="Новая таблица"
-							class="header__name"
-						>
-
-						<div class="header__content">
-							<svg class="header__favourites icon-24 gray-hover">
-								<use xlink:href="../static/icons/sprite.svg#star"></use>
-							</svg>
-							<div class="info">
-								<svg class="info__icon icon-16">
-									<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
-								</svg>
-								<p>Пометить</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="header__action">
-						<button class="header__delete gray-hover">
-							<svg class="header__trash icon-24">
-								<use xlink:href="../static/icons/sprite.svg#trash"></use>
-							</svg>
-						</button>
-						<a href="#" class="header__link gray-hover">
-							<svg class="header__arrow icon-24">
-								<use xlink:href="../static/icons/sprite.svg#arrow-circle"></use>
-							</svg>
-						</a>
-					</div>
-
-					<div class="header__set">
-						<nav>
-							<ul class="header__list grid-row justify-content-start">
-								<li class="header__item gray-hover">
-		 							Файл
-								</li>
-								<li class="header__item gray-hover">
-									Правка
-								</li>
-								<li class="header__item gray-hover">
-									Вид
-								</li>
-								<li class="header__item gray-hover">
-									Формат
-								</li>
-								<li class="header__item gray-hover">
-									Данные
-								</li>
-								<li class="header__item gray-hover">
-									Инструменты
-								</li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</header>
-
-			<div class="toolbar grid-row justify-content-start">
-				<div class="toolbar__format gray-border grid-row justify-content-start">
-					<div class="toolbar__format-item toolbar__info gray-hover">
-						p.
-						<div class="info">
-							<svg class="info__icon icon-16">
-								<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
-							</svg>
-							<p>Денежный формат</p>
-						</div>
-					</div>
-
-					<div class="toolbar__format-item toolbar__info gray-hover">
-						%
-						<div class="info">
-							<svg class="info__icon icon-16">
-								<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
-							</svg>
-							<p>Процентный формат</p>
-						</div>
-					</div>
-
-					<div class="toolbar__format-item toolbar__info gray-hover">
-						<svg class="toolbar__icon icon-24">
-							<use xlink:href="../static/icons/sprite.svg#arrow"></use>
+					<div class="header__content">
+						<svg class="header__favourites icon-24 gray-hover">
+							<use xlink:href="../static/icons/sprite.svg#star"></use>
 						</svg>
-
 						<div class="info">
 							<svg class="info__icon icon-16">
 								<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
 							</svg>
-							<p>Уменьшить число после запятой</p>
-						</div>
-					</div>
-
-					<div class="toolbar__format-item toolbar__info gray-hover">
-						<svg class="toolbar__icon icon-24 rotate-180">
-							<use xlink:href="../static/icons/sprite.svg#arrow"></use>
-						</svg>
-
-						<div class="info">
-							<svg class="info__icon icon-16">
-								<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
-							</svg>
-							<p>Увеличить числ после запятой</p>
+							<p>Пометить</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="toolbar__font  gray-border">
-					<div class="toolbar__font-action toolbar__info grid-row justify-content-start gray-hover">
-						<p>По умолчанию</p>
+				<div class="header__action">
+					<button class="header__delete gray-hover">
+						<svg class="header__trash icon-24">
+							<use xlink:href="../static/icons/sprite.svg#trash"></use>
+						</svg>
+					</button>
+					<a href="#" class="header__link gray-hover">
+						<svg class="header__arrow icon-24">
+							<use xlink:href="../static/icons/sprite.svg#arrow-circle"></use>
+						</svg>
+					</a>
+				</div>
 
-						<svg class="toolbar__icon icon-24">
+				<div class="header__set">
+					<nav>
+						<ul class="header__list grid-row justify-content-start">
+							<li class="header__item gray-hover">
+								Файл
+							</li>
+							<li class="header__item gray-hover">
+								Правка
+							</li>
+							<li class="header__item gray-hover">
+								Вид
+							</li>
+							<li class="header__item gray-hover">
+								Формат
+							</li>
+							<li class="header__item gray-hover">
+								Данные
+							</li>
+							<li class="header__item gray-hover">
+								Инструменты
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<div class="toolbar grid-row justify-content-start">
+			<div class="toolbar__format gray-border grid-row justify-content-start">
+				<div class="toolbar__format-item toolbar__info gray-hover">
+					p.
+					<div class="info">
+						<svg class="info__icon icon-16">
 							<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
 						</svg>
-
-						<div class="info">
-							<svg class="info__icon icon-16">
-								<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
-							</svg>
-							<p>Шрифт</p>
-						</div>
+						<p>Денежный формат</p>
 					</div>
 				</div>
 
-				<div class="toolbar__text gray-border grid-row justify-content-start">
-					<div class="toolbar__text-action toolbar__info">
-						<svg class="toolbar__icon gray-hover icon-24">
-							<use xlink:href="../static/icons/sprite.svg#bold"></use>
+				<div class="toolbar__format-item toolbar__info gray-hover">
+					%
+					<div class="info">
+						<svg class="info__icon icon-16">
+							<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
 						</svg>
-
-						<div class="info">
-							<svg class="info__icon icon-16">
-								<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
-							</svg>
-							<p>Полужирный (Ctrl + R)</p>
-						</div>
-					</div>
-
-					<div class="toolbar__text-action toolbar__info">
-						<svg class="toolbar__icon gray-hover icon-24">
-							<use xlink:href="../static/icons/sprite.svg#italic"></use>
-						</svg>
-
-						<div class="info">
-							<svg class="info__icon icon-16">
-								<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
-							</svg>
-							<p>Курсив (Ctrl + I)</p>
-						</div>
-					</div>
-
-					<div class="toolbar__text-action toolbar__info">
-						<svg class="toolbar__icon gray-hover icon-24">
-							<use xlink:href="../static/icons/sprite.svg#cross-out"></use>
-						</svg>
-
-						<div class="info">
-							<svg class="info__icon icon-16">
-								<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
-							</svg>
-							<p>Зачеркнутый (Alt + Shift + 5)</p>
-						</div>
-					</div>
-
-					<div class="toolbar__text-action toolbar__info">
-						<svg class="toolbar__icon gray-hover icon-24">
-							<use xlink:href="../static/icons/sprite.svg#format"></use>
-						</svg>
-
-						<div class="info">
-							<svg class="info__icon icon-16">
-								<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
-							</svg>
-							<p>Капс (Ctrl + U)</p>
-						</div>
+						<p>Процентный формат</p>
 					</div>
 				</div>
 
-				<div class="grid-row justify-content-start gray-border">
-					<div class="gray-hover toolbar__info">
-						<svg class="toolbar__icon gray-hover icon-24">
-							<use xlink:href="../static/icons/sprite.svg#format-align-left"></use>
-						</svg>
+				<div class="toolbar__format-item toolbar__info gray-hover">
+					<svg class="toolbar__icon icon-24">
+						<use xlink:href="../static/icons/sprite.svg#arrow"></use>
+					</svg>
 
-						<div class="info">
-							<svg class="info__icon icon-16">
-								<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
-							</svg>
-							<p>Позицианирование</p>
-						</div>
+					<div class="info">
+						<svg class="info__icon icon-16">
+							<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
+						</svg>
+						<p>Уменьшить число после запятой</p>
 					</div>
+				</div>
 
-					<div class="gray-hover toolbar__info">
-						<svg class="toolbar__icon gray-hover icon-24">
-							<use xlink:href="../static/icons/sprite.svg#format-align-center"></use>
+				<div class="toolbar__format-item toolbar__info gray-hover">
+					<svg class="toolbar__icon icon-24 rotate-180">
+						<use xlink:href="../static/icons/sprite.svg#arrow"></use>
+					</svg>
+
+					<div class="info">
+						<svg class="info__icon icon-16">
+							<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
 						</svg>
-
-						<div class="info">
-							<svg class="info__icon icon-16">
-								<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
-							</svg>
-							<p>Позицианирование</p>
-						</div>
-					</div>
-
-					<div class="gray-hover toolbar__info">
-						<svg class="toolbar__icon gray-hover icon-24">
-							<use xlink:href="../static/icons/sprite.svg#format-align-right"></use>
-						</svg>
-
-						<div class="info">
-							<svg class="info__icon icon-16">
-								<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
-							</svg>
-							<p>Позицианирование</p>
-						</div>
+						<p>Увеличить числ после запятой</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="formula grid-row justify-content-start">
-				<div class="formula__fx">fx</div>
-				<div class="formula__input" contenteditable spellcheck="false"></div>
+			<div class="toolbar__font  gray-border">
+				<div class="toolbar__font-action toolbar__info grid-row justify-content-start gray-hover">
+					<p>По умолчанию</p>
+
+					<svg class="toolbar__icon icon-24">
+						<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
+					</svg>
+
+					<div class="info">
+						<svg class="info__icon icon-16">
+							<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
+						</svg>
+						<p>Шрифт</p>
+					</div>
+				</div>
 			</div>
 
-			<div class="table">
+			<div class="toolbar__text gray-border grid-row justify-content-start">
+				<div class="toolbar__text-action toolbar__info">
+					<svg class="toolbar__icon gray-hover icon-24">
+						<use xlink:href="../static/icons/sprite.svg#bold"></use>
+					</svg>
 
+					<div class="info">
+						<svg class="info__icon icon-16">
+							<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
+						</svg>
+						<p>Полужирный (Ctrl + R)</p>
+					</div>
+				</div>
+
+				<div class="toolbar__text-action toolbar__info">
+					<svg class="toolbar__icon gray-hover icon-24">
+						<use xlink:href="../static/icons/sprite.svg#italic"></use>
+					</svg>
+
+					<div class="info">
+						<svg class="info__icon icon-16">
+							<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
+						</svg>
+						<p>Курсив (Ctrl + I)</p>
+					</div>
+				</div>
+
+				<div class="toolbar__text-action toolbar__info">
+					<svg class="toolbar__icon gray-hover icon-24">
+						<use xlink:href="../static/icons/sprite.svg#cross-out"></use>
+					</svg>
+
+					<div class="info">
+						<svg class="info__icon icon-16">
+							<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
+						</svg>
+						<p>Зачеркнутый (Alt + Shift + 5)</p>
+					</div>
+				</div>
+
+				<div class="toolbar__text-action toolbar__info">
+					<svg class="toolbar__icon gray-hover icon-24">
+						<use xlink:href="../static/icons/sprite.svg#format"></use>
+					</svg>
+
+					<div class="info">
+						<svg class="info__icon icon-16">
+							<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
+						</svg>
+						<p>Капс (Ctrl + U)</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid-row justify-content-start gray-border">
+				<div class="gray-hover toolbar__info">
+					<svg class="toolbar__icon gray-hover icon-24">
+						<use xlink:href="../static/icons/sprite.svg#format-align-left"></use>
+					</svg>
+
+					<div class="info">
+						<svg class="info__icon icon-16">
+							<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
+						</svg>
+						<p>Позицианирование</p>
+					</div>
+				</div>
+
+				<div class="gray-hover toolbar__info">
+					<svg class="toolbar__icon gray-hover icon-24">
+						<use xlink:href="../static/icons/sprite.svg#format-align-center"></use>
+					</svg>
+
+					<div class="info">
+						<svg class="info__icon icon-16">
+							<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
+						</svg>
+						<p>Позицианирование</p>
+					</div>
+				</div>
+
+				<div class="gray-hover toolbar__info">
+					<svg class="toolbar__icon gray-hover icon-24">
+						<use xlink:href="../static/icons/sprite.svg#format-align-right"></use>
+					</svg>
+
+					<div class="info">
+						<svg class="info__icon icon-16">
+							<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
+						</svg>
+						<p>Позицианирование</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="formula grid-row justify-content-start">
+			<div class="formula__fx">fx</div>
+			<div class="formula__input" contenteditable="" spellcheck="false"></div>
+		</div>
+
+		<div class="table">
+
+			<div class="row grid-row justify-content-start">
+				<div class="row__info grid-row justify-content-start">
+
+				</div>
+
+				<div class="row__data">
+					<div class="column grid-row justify-content-center">A</div>
+					<div class="column grid-row justify-content-center">B</div>
+					<div class="column grid-row justify-content-center">C</div>
+				</div>
+			</div>
+
+			<div class="row grid-row justify-content-start">
+				<div class="row__info grid-row justify-content-start">
+					1
+				</div>
+
+				<div class="row__data">
+					<div class="cell selected" contenteditable="">A1</div>
+					<div class="cell" contenteditable="">B1</div>
+					<div class="cell" contenteditable="">C1</div>
+				</div>
+			</div>
+
+			<div class="row grid-row justify-content-start">
+				<div class="row__info grid-row justify-content-start">
+					2
+				</div>
+
+				<div class="row__data">
+					<div class="cell" contenteditable="">A2</div>
+					<div class="cell" contenteditable="">B2</div>
+					<div class="cell" contenteditable="">C2</div>
+				</div>
+			</div>
+
+			<div class="row grid-row justify-content-start">
+				<div class="row__info grid-row justify-content-start">
+					3
+				</div>
+
+				<div class="row__data">
+					<div class="cell" contenteditable="">A3</div>
+					<div class="cell" contenteditable="">B3</div>
+					<div class="cell" contenteditable="">C3</div>
+				</div>
 			</div>
 
 		</div>
 
 	</div>
+
+</div>
 
 </body>
 </html>
