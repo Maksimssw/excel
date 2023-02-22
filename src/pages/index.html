@@ -32,9 +32,17 @@
 							class="header__name"
 						>
 
-						<svg class="header__favourites icon-24 gray-hover">
-							<use xlink:href="../static/icons/sprite.svg#star"></use>
-						</svg>
+						<div class="header__content">
+							<svg class="header__favourites icon-24 gray-hover">
+								<use xlink:href="../static/icons/sprite.svg#star"></use>
+							</svg>
+							<div class="info">
+								<svg class="info__icon icon-16">
+									<use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
+								</svg>
+								<p>Пометить</p>
+							</div>
+						</div>
 					</div>
 
 					<div class="header__action">
@@ -239,8 +247,9 @@
 				</div>
 			</div>
 
-			<div class="formula">
-
+			<div class="formula grid-row justify-content-start">
+				<div class="formula__fx">fx</div>
+				<div class="formula__input" contenteditable spellcheck="false"></div>
 			</div>
 
 			<div class="table">

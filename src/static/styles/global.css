@@ -20,7 +20,10 @@
     --border-sm:       4px;
 
     --height-header:   56px;
-    --height-toolbar:  60px;
+    --height-toolbar:  40px;
+    --height-formula:  24px;
+
+    --info-cell-width: 40px;
 }
 
 * {
