@@ -17,7 +17,13 @@
 
   --color-blue400:   #1a73e8;
 
-  --border-sm:       4px;
+  --color-green200:  #bee1a7;
+  --color-green300:  #31ac70;
+  --color-green400:  #278758;
+
+  --border-rd-sm:    4px;
+  --border-rd-md:    6px;
+  --border-rd-lg:    12px;
 
   --height-header:   56px;
   --height-toolbar:  40px;
@@ -111,7 +117,7 @@ button {
 }
 
 .gray-hover {
-  border-radius: var(--border-sm);
+  border-radius: var(--border-rd-sm);
   transition: background 0.2s;
   cursor: pointer;
 }
@@ -125,3 +131,8 @@ button {
   background: var(--color-gray300);
 }
 
+.green-active:active {
+  border-radius: 50%;
+  fill: var(--color-green400);
+  background: var(--color-green200);
+}
