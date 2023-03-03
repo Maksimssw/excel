@@ -1,3 +1,9 @@
+import {Excel} from "@/components/excel/Excel";
+
+const excel = new Excel('#app', {
+  component: []
+})
+
 {
   // Functionality in the form of a list and in the form of a grid
   const list = document.querySelector('.list-button')
