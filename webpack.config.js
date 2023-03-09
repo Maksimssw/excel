@@ -29,7 +29,8 @@ module.exports = {
   entry: ['@babel/polyfill', '/static/scripts/index.js'],
   output: {
     filename: filename('js'),
-    path: path.resolve(__dirname, 'build')
+    path: path.resolve(__dirname, 'build'),
+    clean: true
   },
   resolve: {
     extensions: ['.js'],
@@ -56,7 +57,7 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, 'src/static/icons/favicon.ico'),
-          to: path.resolve(__dirname, 'build/static/icons/')
+          to: path.resolve(__dirname, 'build/static/icons')
         },
       ]
     }),

@@ -1,5 +1,9 @@
-import {ExcelComponent} from "@core/ExcelComponent";
+import {ExcelComponent} from "../../core/ExcelComponent";
 
-export class Toolbar extends ExcelComponent {
-
+class Toolbar extends ExcelComponent {
+  toHTML() {
+    return '<h1>Toolbar</h1>'
+  }
 }
+
+export default Toolbar
