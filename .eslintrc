@@ -15,7 +15,8 @@
     "eol-last": "off",
     "max-len": "off",
     "operator-linebreak": "off",
-    "no-unused-vars": "off"
+    "no-unused-vars": "off",
+    "constructor-super": "off"
   },
   "extends": ["eslint:recommended", "google"]
 }
