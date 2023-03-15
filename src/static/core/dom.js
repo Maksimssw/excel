@@ -18,6 +18,10 @@ class Dom {
     return this
   }
 
+  on(type, fn) {
+    addEventListener(type, fn)
+  }
+
   append(node) {
     if (node instanceof Dom) {
       node = node.$el
