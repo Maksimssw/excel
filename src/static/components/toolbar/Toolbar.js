@@ -1,7 +1,16 @@
 import {ExcelComponent} from "../../core/ExcelComponent";
 
 class Toolbar extends ExcelComponent {
+  constructor($root) {
+    super($root, {
+      name: 'Toolbar',
+      listeners: ['click']
+    });
+  }
   static className = 'toolbar grid-row justify-content-start'
+  onClick(event) {
+    console.log(event.target)
+  }
   toHTML() {
     return `
       <div class="toolbar__format gray-border grid-row justify-content-start">
@@ -52,7 +61,7 @@ class Toolbar extends ExcelComponent {
         </div>
       </div>
 
-      <div class="toolbar__font  gray-border">
+      <div class="toolbar__font gray-border">
         <div class="toolbar__font-action toolbar__info grid-row justify-content-start gray-hover">
           <p>По умолчанию</p>
 

@@ -18,8 +18,12 @@ class Dom {
     return this
   }
 
-  on(type, fn) {
-    addEventListener(type, fn)
+  on(type, callback) {
+    this.$el.addEventListener(type, callback)
+  }
+
+  off(type, callback) {
+    this.$el.removeEventListener(type, callback)
   }
 
   append(node) {
