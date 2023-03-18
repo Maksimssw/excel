@@ -1,36 +1,14 @@
-{
-  // Functionality in the form of a list and in the form of a grid
-  const list = document.querySelector('.list-button')
-  const grid = document.querySelector('.grid-button')
-  const buttons = document.querySelectorAll('.dashboard__button')
-  const listWrapper = document.querySelector('.list')
+import Excel from "../components/excel/Excel.js";
+import Header from "../components/header/Header";
+import Toolbar from "../components/toolbar/Toolbar";
+import Formula from "../components/formula/Formula";
+import Table from "../components/table/Table";
+import '../styles/global.css'
+import '../styles/styles.css'
+import '../styles/dashboard.css'
 
-  const changeClass = () => {
-    grid.classList.contains('dashboard__button_active')
-      ? listWrapper.classList.remove('list_grid')
-      : listWrapper.classList.add('list_grid')
-  }
+const excel = new Excel('#app', {
+  components: [Header, Toolbar, Formula, Table]
+})
 
-  changeClass();
-  const toggleClassButton = () => {
-    if (localStorage.getItem('dasboard-button-active') === 'true') {
-      list.classList.remove('dashboard__button_active')
-      grid.classList.add('dashboard__button_active')
-    } else {
-      list.classList.add('dashboard__button_active')
-      grid.classList.remove('dashboard__button_active')
-    }
-
-    changeClass();
-  }
-
-  toggleClassButton()
-
-  buttons.forEach((button) => {
-    button.addEventListener('click', () => {
-      localStorage.setItem('dasboard-button-active', grid.classList.toggle('dashboard__button_active'))
-
-      toggleClassButton()
-    })
-  })
-}
+excel.render()

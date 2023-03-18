@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
@@ -12,115 +12,8 @@
 </head>
 <body>
 
-<div id="app" class="container">
+	<div id="app"></div>
 
-	<div class="dashboard">
-
-		<header class="dashboard__header">
-			<form class="search grid-row justify-content-start">
-				<button class="search__button">
-					<svg class="search__icon icon-24">
-						<use xlink:href="../static/icons/sprite.svg#search"></use>
-					</svg>
-				</button>
-
-				<input
-					type="text"
-					class="search__input"
-					placeholder="Поиск"
-				>
-
-				<button>
-					<svg class="search__delete search__delete_active icon-24">
-						<use xlink:href="../static/icons/sprite.svg#close"></use>
-					</svg>
-				</button>
-			</form>
-		</header>
-
-		<div class="dashboard__create">
-			<h1 class="dashboard__headline">Создать таблицу</h1>
-			<ul class="dashboard__list grid-row justify-content-start">
-				<li class="dashboard__item">
-					<img
-						class="dashboard__image"
-						src="../static/images/dashboard/googlecolors.webp"
-						alt=""
-					>
-
-					<a href="#" class="dashboard__link">
-						Пустой файл
-					</a>
-				</li>
-			</ul>
-		</div>
-
-		<div class="dashboard__wrapper">
-
-			<div class="dashboard__info">
-				<p class="dashboard__date">За неделю</p>
-				<div class="dashboard__form">
-					<button class="dashboard__button dashboard__button_active grid-button green-active">
-						<svg class="dashboard__icon icon-24">
-							<use xlink:href="../static/icons/sprite.svg#grid"></use>
-						</svg>
-					</button>
-					<button class="dashboard__button list-button green-active">
-						<svg class="dashboard__icon icon-24">
-							<use xlink:href="../static/icons/sprite.svg#list"></use>
-						</svg>
-					</button>
-				</div>
-			</div>
-
-			<ul class="list">
-				<li class="item">
-					<span>
-						<a href="#" class="item__name">
-							Новая таблица
-						</a>
-					</span>
-					<span class="item__date">30.01.2004</span>
-					<button class="item__action">
-						<svg class="icon-24">
-							<use xlink:href="../static/icons/sprite.svg#setting"></use>
-						</svg>
-					</button>
-				</li>
-
-				<li class="item">
-					<span>
-						<a href="#" class="item__name">
-							Новая таблица
-						</a>
-					</span>
-					<span class="item__date">30.01.2004</span>
-					<button class="item__action">
-						<svg class="icon-24">
-							<use xlink:href="../static/icons/sprite.svg#setting"></use>
-						</svg>
-					</button>
-				</li>
-
-				<li class="item">
-					<span>
-						<a href="#" class="item__name">
-							Новая таблица
-						</a>
-					</span>
-					<span class="item__date">30.01.2004</span>
-					<button class="item__action">
-						<svg class="icon-24">
-							<use xlink:href="../static/icons/sprite.svg#setting"></use>
-						</svg>
-					</button>
-				</li>
-			</ul>
-
-		</div>
-	</div>
-
-</div>
-<script src="../static/scripts/index.js"></script>
 </body>
+<script type="module" src="../static/scripts/index.js"></script>
 </html>
