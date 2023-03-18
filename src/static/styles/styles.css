@@ -214,7 +214,7 @@
   min-width: var(--info-cell-width);
   border: 1px solid var(--color-gray350);
   border-top: 0;
-  background: var(--color-gray100);
+  background: var(--color-white);
   color: var(--color-gray500);
 }
 
@@ -229,7 +229,7 @@
   min-width: 40px;
   height: 100%;
   color: var(--color-gray500);
-  background: var(--color-gray100);
+  background: var(--color-white);
   border: 1px solid var(--color-gray350);
   border-top: 0;
   border-left: 0;
