@@ -10,16 +10,22 @@ const createCell = () => {
 }
 const createCol = (col) => {
   return `
-    <div class="column grid-row justify-content-center">${col}</div>
+    <div class="column grid-row justify-content-center">
+      ${col}
+      <div class="column__resize"></div>
+    </div>
   `
 }
 
 const createRow = (num, content) => {
+  const resize = num ? '<div class="row__resize"></div>' : ''
+
   return `
     <div class="row grid-row justify-content-start">
         <div 
           class="row__info grid-row justify-content-start">
           ${num ? num : ''}
+          ${resize}
         </div>
         <div class="row__data">${content}</div>
     </div>

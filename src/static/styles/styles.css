@@ -202,13 +202,32 @@
   overflow-x: auto;
 }
 
+.column__resize,
+.row__resize {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: var(--color-blue300);
+  opacity: 0;
+}
+
 .row {
   min-height: 20px;
   height: var(--row-height);
 }
 
+.row__resize {
+  left: 0;
+  height: 4px;
+  cursor: row-resize;
+}
+
+.row__resize:hover {
+  opacity: 1;
+}
 
 .row__info {
+  position: relative;
   justify-content: center;
   height: 100%;
   min-width: var(--info-cell-width);
@@ -225,6 +244,7 @@
 }
 
 .column {
+  position: relative;
   width: var(--cell-width);
   min-width: 40px;
   height: 100%;
@@ -233,6 +253,16 @@
   border: 1px solid var(--color-gray350);
   border-top: 0;
   border-left: 0;
+}
+
+.column__resize {
+  top: 0;
+  width: 4px;
+  cursor: col-resize;
+}
+
+.column__resize:hover {
+  opacity: 1;
 }
 
 .cell {
