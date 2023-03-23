@@ -56,9 +56,17 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, 'src/static/icons/favicon.ico'),
+          from: path.resolve(__dirname, 'src/static/icons/'),
           to: path.resolve(__dirname, 'build/static/icons')
         },
+        {
+          from: path.resolve(__dirname, 'src/static/images/'),
+          to: path.resolve(__dirname, 'build/static/images')
+        },
+        {
+          from: path.resolve(__dirname, 'src/static/fonts/'),
+          to: path.resolve(__dirname, 'build/static/fonts')
+        }
       ]
     }),
     new MiniCssExtractPlugin({

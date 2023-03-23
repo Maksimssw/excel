@@ -18,7 +18,7 @@ class Toolbar extends ExcelComponent {
           p.
           <div class="info">
             <svg class="info__icon icon-16">
-              <use xlink:href="../static/icons/sprite.svg#arrow-down"></use>
+              <use xlink:href="#_sprite_arrow-down"></use>
             </svg>
             <p>Денежный формат</p>
           </div>

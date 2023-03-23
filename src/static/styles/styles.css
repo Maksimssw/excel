@@ -9,6 +9,7 @@
   left: 0;
   display: grid;
   grid-template-columns: 40px 1fr;
+  align-items: center;
   padding: 6px 8px;
   height: var(--height-header);
   border-top: 1px solid var(--color-gray250);
@@ -263,6 +264,11 @@
 
 .column__resize:hover {
   opacity: 1;
+}
+
+.column__resize_active {
+  opacity: 1;
+  cursor: col-resize;
 }
 
 .cell {

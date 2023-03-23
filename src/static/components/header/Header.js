@@ -6,7 +6,7 @@ class Header extends ExcelComponent {
     return `
       <a href="#" class="header__logo">
         <img
-          src="@/images/excel-logo.webp"
+          src="../static/images/excel-logo.webp"
           alt=""
         >
       </a>
@@ -21,7 +21,7 @@ class Header extends ExcelComponent {
 
           <div class="header__content">
             <svg class="header__favourites icon-24 gray-hover">
-              <use xlink:href="../static/icons/sprite.svg#star"></use>
+              <use xlink:href="#_sprite_star"></use>
             </svg>
             <div class="info">
               <svg class="info__icon icon-16">
