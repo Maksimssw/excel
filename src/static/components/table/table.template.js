@@ -12,13 +12,13 @@ const createCol = (col, index) => {
   return `
     <div class="column grid-row justify-content-center" data-type="resize" data-col="${index}">
       ${col}
-      <div class="column__resize" data-resize="col"></div>
+      <div class="resize resize_column" data-resize="col"></div>
     </div>
   `
 }
 
 const createRow = (num, content) => {
-  const resize = num ? '<div class="row__resize" data-resize="row"></div>' : ''
+  const resize = num ? '<div class="resize resize_row" data-resize="row"></div>' : ''
 
   return `
     <div class="row grid-row justify-content-start" data-type="resize">

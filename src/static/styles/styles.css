@@ -203,13 +203,13 @@
   overflow-x: auto;
 }
 
-.column__resize,
-.row__resize {
+.resize {
   position: absolute;
   right: 0;
   bottom: 0;
   background: var(--color-blue300);
   opacity: 0;
+  z-index: 10;
 }
 
 .row {
@@ -217,13 +217,13 @@
   height: var(--row-height);
 }
 
-.row__resize {
+.resize_row {
   left: 0;
   height: 4px;
   cursor: row-resize;
 }
 
-.row__resize:hover {
+.resize_row:hover {
   opacity: 1;
 }
 
@@ -256,19 +256,18 @@
   border-left: 0;
 }
 
-.column__resize {
+.resize_column {
   top: 0;
   width: 4px;
   cursor: col-resize;
 }
 
-.column__resize:hover {
+.resize_column:hover {
   opacity: 1;
 }
 
-.column__resize_active {
+.resize_active {
   opacity: 1;
-  cursor: col-resize;
 }
 
 .cell {
