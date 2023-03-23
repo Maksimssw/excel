@@ -16,7 +16,9 @@
     "max-len": "off",
     "operator-linebreak": "off",
     "no-unused-vars": "off",
-    "constructor-super": "off"
+    "constructor-super": "off",
+    "guard-for-in": "off",
+    "no-invalid-this": "off"
   },
   "extends": ["eslint:recommended", "google"]
 }
